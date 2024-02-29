@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task1</title>
+    <style>
+      #main_div {
+        border: 5px solid green;
+        height: auto;
+        width: auto;
+        padding: 20px;
+      }
+      #div1 {
+        border: 5px solid blue;
+        height: 100px;
+        margin: auto;
+        display: flex;
+        padding: 20px;
+      }
+      .div1_child {
+        border: 5px solid tan;
+        height: 80px;
+        width: 450px;
+        margin: auto;
+        display: flex;
+      }
+      .div1_child_small {
+        border: 5px solid red;
+        width: 190px;
+        height: 60px;
+        /* padding-left: 10px; */
+        margin: auto;
+      }
+      .div1_child_small1 {
+        border: 5px solid brown;
+        width: 190px;
+        height: 80px;
+        /* padding-left: 10px; */
+        margin: auto;
+      }
+
+      .div2 {
+        height: 350px;
+        width: auto;
+        margin: auto;
+        display: flex;
+        /* border: 5px solid red; */
+      }
+      .div2_child1 {
+        height: 320px;
+        width: 50%;
+        margin: auto;
+
+        border: 5px solid brown;
+      }
+      .div2_child2 {
+        height: 320px;
+        width: 48%;
+        margin: auto;
+
+        /* border: 5px solid red; */
+      }
+      .div2_child_small {
+        height: 150px;
+        width: auto;
+        /* margin: 0px 0px 0px 0px; */
+
+        border: 5px solid brown;
+        /* padding: 5px; */
+        /* margin: auto; */
+      }
+      .div2_child2 > div:nth-child(1) {
+        margin-top: -4px;
+        margin-bottom: 8px;
+        /* background-color: black; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main_div">
+      <div id="div1">
+        <div class="div1_child"></div>
+        <div class="div1_child">
+          <div class="div1_child_small"></div>
+          <div class="div1_child_small"></div>
+        </div>
+        <div class="div1_child"></div>
+      </div>
+
+      <!-- div-2 -->
+      <div class="div2">
+        <div class="div2_child1"></div>
+        <div class="div2_child2">
+          <div class="div2_child_small"></div>
+          <div class="div2_child_small"></div>
+        </div>
+      </div>
+
+      <!-- Div -3 -->
+      <div id="div1">
+        <div class="div1_child"></div>
+        <!-- <div class="div1_child"> -->
+        <div class="div1_child_small1"></div>
+        <div class="div1_child_small1"></div>
+        <!-- </div> -->
+        <div class="div1_child"></div>
+      </div>
+    </div>
+  </body>
+</html>

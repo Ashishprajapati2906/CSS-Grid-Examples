@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK2</title>
+    <style>
+      #main_div {
+        background-color: #420961;
+        height: 600px;
+        width: 100%;
+      }
+      #div1 {
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+        grid-template-rows: repeat(6, 100px);
+        justify-content: space-evenly;
+        gap: 10px;
+      }
+      #div1 > div {
+        margin-top: 10px;
+      }
+      #div1 > :nth-child(1) {
+        background-color: #bb53d4;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 3;
+
+        /* border: 5px solid red; */
+      }
+      #div1 > :nth-child(2) {
+        background-color: #f23f4f;
+        /* height: 50px; */
+      }
+      #div1 > :nth-child(3) {
+        background-color: #02bfce;
+        /* height: 110px; */
+      }
+      #div1 > :nth-child(4) {
+        background-color: #fca612;
+        height: 200px;
+      }
+      #div1 > :nth-child(5) {
+        background-color: #04bfce;
+        height: 300px;
+      }
+      #div1 > :nth-child(6) {
+        background-color: #02bfce;
+        height: 80px;
+      }
+      #div1 > :nth-child(7) {
+        background-color: #fca710;
+        /* height: 40px; */
+      }
+      #div1 > :nth-child(10) {
+        background-color: #fca710;
+        /* height: 40px; */
+      }
+      #div1 > :nth-child(11) {
+        background-color: #f2404d;
+        /* height: 40px; */
+      }
+      #div1 > :nth-child(12) {
+        background-color: #f23f4e;
+        /* height: 50px; */
+      }
+      #div1 > :nth-child(14) {
+        background-color: #bc53d3;
+        grid-row-start: 4;
+        grid-column-start: 3;
+        grid-row-end: 6;
+        grid-column-end: 5;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main_div">
+      <div id="div1">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
