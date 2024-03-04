@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #banner {
+        display: flex;
+        height: 200px;
+        width: 90%;
+        background-color: #293389;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        margin: auto;
+      }
+      #banner > div > h1 {
+        margin-bottom: 0px;
+        color: #ffffff;
+        /* border: 2px solid brown; */
+      }
+      #banner > div > p {
+        margin-top: 0px;
+        color: #ffffff;
+
+        /* border: 2px solid rgb(218, 175, 19); */
+      }
+      button {
+        transition: all 0.5s ease;
+        color: #fff;
+        border: 3px solid white;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1;
+        font-size: 17px;
+        background-color: transparent;
+        padding: 10px;
+        outline: none;
+        border-radius: 4px;
+      }
+      #banner > div > button:hover {
+        color: #001f3f;
+        background-color: #fff;
+      }
+      #banner > div > img {
+        height: 200px;
+        width: 400px;
+        border-radius: 0px 20px 20px 0px;
+      }
+      #service {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 15px;
+        /* border: 2px solid rgba(43, 255, 0, 0.874); */
+        margin: auto;
+        margin-top: 20px;
+      }
+      #service > div {
+        height: 300px;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        /* border: 2px solid red; */
+      }
+      #service > div > img {
+        height: 300px;
+        width: 100%;
+      }
+
+      #heading {
+        width: 90%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        /* border: 2px solid red; */
+        margin: auto;
+        margin-top: 20px;
+      }
+      #heading > h1 {
+        margin-bottom: 0px;
+        /* border: 2px solid brown; */
+      }
+      #heading > p {
+        margin-top: 0px;
+        padding-left: 150px;
+        /* border: 2px solid rgb(218, 175, 19); */
+      }
+
+      #work {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 25px;
+        /* border: 2px solid rgba(43, 255, 0, 0.874); */
+        margin: auto;
+        margin-top: 20px;
+      }
+      #work > div {
+        height: 300px;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        /* border: 2px solid red; */
+      }
+      #work > div > img {
+        height: 220px;
+        width: 100%;
+        /* border: 2px solid rgba(241, 216, 30, 0.783); */
+        margin: 0px;
+      }
+      #work > div > h3 {
+        margin: 0px;
+        /* border: 2px solid rgba(7, 50, 116, 0.783); */
+        font-weight: bolder;
+        padding-left: 5px;
+      }
+      #work > div > p {
+        margin: 0px;
+        /* border: 2px solid rgba(7, 50, 116, 0.783); */
+        padding-left: 5px;
+      }
+      @media all and (min-width: 481px) and (max-width: 770px) {
+        #banner {
+          height: 300px;
+        }
+        #banner > div > img {
+          height: 300px;
+          width: 200px;
+          border-radius: 0px 20px 20px 0px;
+        }
+        #service {
+          height: auto;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          gap: 15px;
+          margin: auto;
+          margin-top: 20px;
+        }
+
+        #heading {
+          width: 90%;
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          height: 200px;
+          margin: auto;
+          margin-top: 20px;
+        }
+        #heading > h1 {
+          margin-bottom: 0px;
+        }
+        #heading > p {
+          margin-top: 0px;
+          padding: 0px;
+        }
+
+        #work {
+          width: 90%;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          gap: 25px;
+          /* border: 2px solid rgba(43, 255, 0, 0.874); */
+          margin: auto;
+          margin-top: 20px;
+        }
+      }
+
+      @media all and (min-width: 320px) and (max-width: 480px) {
+        #banner {
+          height: 280px;
+        }
+        #banner > div > img {
+          height: 280px;
+          width: 150px;
+          border-radius: 0px 20px 20px 0px;
+        }
+        #service {
+          height: auto;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          gap: 15px;
+          margin: auto;
+          margin-top: 20px;
+        }
+        #heading {
+          width: 90%;
+          display: grid;
+          height: 250px;
+          /* border: 2px solid red; */
+          margin: auto;
+          margin: 0px;
+          margin-left: 10px;
+          padding-left: 25px;
+        }
+        #heading > h1 {
+          margin-bottom: 0px;
+          /* border: 2px solid red; */
+        }
+        #heading > p {
+          margin-top: 0px;
+          padding: 0px;
+          /* border: 2px solid red; */
+        }
+
+        #work {
+          width: 90%;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(8, 1fr);
+          gap: 25px;
+          /* border: 2px solid rgba(43, 255, 0, 0.874); */
+          margin: auto;
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <div>
+        <h1>You are in safe hands</h1>
+        <p>Choose the experts in end to end surgical care</p>
+        <button>Know more</button>
+      </div>
+      <div>
+        <img src="banner.png" alt=" image" />
+      </div>
+    </div>
+    <div id="service">
+      <div>
+        <img src="service.png" alt="" />
+      </div>
+      <div>
+        <img src="service.png" alt="" />
+      </div>
+      <div>
+        <img src="service.png" alt="" />
+      </div>
+      <div>
+        <img src="service.png" alt="" />
+      </div>
+      <div>
+        <img src="service.png" alt="" />
+      </div>
+      <div>
+        <img src="service.png" alt="" />
+      </div>
+    </div>
+
+    <div id="heading">
+      <h1>Book an appointment for an in clinic-consulation</h1>
+      <p>Find experienced doctors across all specialties</p>
+    </div>
+
+    <div id="work">
+      <div>
+        <img src="work _section.jpg" alt="" />
+        <h3>Dentish</h3>
+        <p>Teething trouble? shedule a dental checkup</p>
+      </div>
+      <div>
+        <img src="work _section.jpg" alt="" />
+        <h3>Dentish</h3>
+        <p>Teething trouble? shedule a dental checkup</p>
+      </div>
+      <div>
+        <img src="work _section.jpg" alt="" />
+        <h3>Dentish</h3>
+        <p>Teething trouble? shedule a dental checkup</p>
+      </div>
+      <div>
+        <img src="work _section.jpg" alt="" />
+        <h3>Dentish</h3>
+        <p>Teething trouble? shedule a dental checkup</p>
+      </div>
+      <div>
+        <img src="work _section.jpg" alt="" />
+        <h3>Dentish</h3>
+        <p>Teething trouble? shedule a dental checkup</p>
+      </div>
+      <div>
+        <img src="work _section.jpg" alt="" />
+        <h3>Dentish</h3>
+        <p>Teething trouble? shedule a dental checkup</p>
+      </div>
+      <div>
+        <img src="work _section.jpg" alt="" />
+        <h3>Dentish</h3>
+        <p>Teething trouble? shedule a dental checkup</p>
+      </div>
+      <div>
+        <img src="work _section.jpg" alt="" />
+        <h3>Dentish</h3>
+        <p>Teething trouble? shedule a dental checkup</p>
+      </div>
+    </div>
+  </body>
+</html>
